@@ -6,6 +6,16 @@
 
 </br>
 
+# Installing
+
+```
+# Linux/macOS
+python3 -m pip install -U PingPongWr
+
+# Windows
+py -3 -m pip install -U PingPongWr
+```
+
 # Quick Example
 
 ### 독자적 사용 예시
