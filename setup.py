@@ -5,7 +5,7 @@ with open("./README.md", encoding="utf-8") as f:
 
 setup(
     name="PingPongWr",
-    version="0.0.6",
+    version="0.0.7",
     description="PingPongBuilder Custom Api Module",
     long_description=readme,
     long_description_content_type='text/markdown',

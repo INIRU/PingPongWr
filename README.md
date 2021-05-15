@@ -27,7 +27,7 @@ import asyncio # 비동기 실행을 위한 모듈
 url = "커스텀 API 링크"  # 핑퐁빌더 Custom API URL
 pingpong_token = "인증 토큰"  # 핑퐁빌더 Custom API Token
 
-Ping = PingPongWr.Conntect(url, pingpong_token)  # 핑퐁 모듈 클래스 선언
+Ping = PingPongWr.Connect(url, pingpong_token)  # 핑퐁 모듈 클래스 선언
 
 async def Example(): # 비동기식 함수
     str_text = input("나: ")  # 대화할 말 입력받기
@@ -53,7 +53,7 @@ bot = commands.Bot(command_prefix='>')
 url = "커스텀 API 링크"  # 핑퐁빌더 Custom API URL
 pingpong_token = "인증 토큰"  # 핑퐁빌더 Custom API Token
 
-Ping = PingPongWr.Conntect(url, pingpong_token)  # 핑퐁 모듈 클래스 선언
+Ping = PingPongWr.Connect(url, pingpong_token)  # 핑퐁 모듈 클래스 선언
 
 @bot.event()
 async def on_message(message):

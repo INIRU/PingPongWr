@@ -15,13 +15,13 @@ def pingpong_custom_url(url: str):
         raise TypeError("Not Custom API URL")
 
 
-class Conntect:
+class Connect:
     """ 핑퐁빌더를 쉽게 사용하게 해주는 모듈 :class: 이다.
 
     #Example Code
     import PingPongWr
 
-    Ping = PingPongWr.Conntect(url, authorization)
+    Ping = PingPongWr.Connect(url, authorization)
     await Ping.Pong(Session_id, text)
 
     #Return
