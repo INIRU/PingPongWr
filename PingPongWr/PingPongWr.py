@@ -60,17 +60,17 @@ class Connect:
         }
         if dialog == True:
             self.dialog[session_id].append(data[0]["text"])
+            while len(self.dialog[session_id]) > 5:
+                del self.dialog[session_id][0]
         if len(data) == 2:
             if topic == True:
                 if "text" in data[1]:
                     return_text_data["topic"] = data[1]["text"]
                     if dialog == True:
-                        self.dialog[session_id] = data[1]["text"]
+                        self.dialog[session_id].append(data[1]["text"])
             elif image == True:
                 if "image" in data[1]:
                     return_text_data["image"] = data[1]["image"]["url"]
-        while len(self.dialog[session_id]) > 5:
-            del self.dialog[session_id][0]
         return return_text_data
 
     async def PingPongCustomAPI_Request_POST(self, session_id: str, text: str, dialog: bool = True) -> dict:
